@@ -98,11 +98,9 @@ export default {
         'pulse-glow': {
           '0%, 100%': {
             transform: 'scale(0.98)',
-            'box-shadow': '0 0 20px hsl(var(--accent)), 0 0 40px hsl(var(--accent)), 0 0 60px hsl(276, 100%, 25%)',
           },
           '50%': {
             transform: 'scale(1.02)',
-            'box-shadow': '0 0 30px hsl(var(--accent)), 0 0 60px hsl(var(--accent)), 0 0 90px hsl(276, 100%, 25%)',
           },
         },
         'rotate': {

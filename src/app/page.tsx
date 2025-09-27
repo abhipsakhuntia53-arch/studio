@@ -3,6 +3,38 @@ import Link from 'next/link';
 import FloatingParticles from '@/components/floating-particles';
 import { AlertTriangle } from 'lucide-react';
 
+const MagicEye = () => (
+  <div className="relative h-48 w-48">
+    <div className="eye-orb-container">
+      <div className="eye-orb">
+        <div className="eye-iris">
+          <div className="eye-pupil" />
+        </div>
+        <div className="eye-lid top" />
+        <div className="eye-lid bottom" />
+      </div>
+    </div>
+    <svg
+      className="absolute inset-0 h-full w-full"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+    >
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+            result="goo"
+          />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+);
+
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
@@ -18,8 +50,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="my-8 animate-pulse-glow">
-            <div className="orb" />
+          <div className="my-8">
+            <MagicEye />
           </div>
 
           <Button
