@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import FloatingParticles from '@/components/floating-particles';
+import { AlertTriangle } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -30,6 +31,21 @@ export default function Home() {
               Download Now
             </Link>
           </Button>
+
+          <div className="mt-12 max-w-2xl animate-fade-in rounded-lg border border-yellow-500/30 bg-yellow-900/10 p-4 text-slate-300 backdrop-blur-sm">
+            <div className="flex items-center justify-center gap-2">
+              <AlertTriangle className="h-5 w-5 text-yellow-400" />
+              <h3 className="text-lg font-semibold text-yellow-400">
+                A Note on Large Files
+              </h3>
+            </div>
+            <p className="mt-2 text-sm">
+              When you download, Google Drive may display a message like, &quot;This file is too large for Google to scan for viruses.&quot; This is a standard warning for large files that exceed their scanning limit.
+            </p>
+            <p className="mt-2 text-sm">
+              We provide a full guarantee from our company that the file is safe and free from any harmful content. Your security is our priority, so you can download with confidence.
+            </p>
+          </div>
         </div>
       </main>
     </div>
