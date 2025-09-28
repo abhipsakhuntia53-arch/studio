@@ -10,8 +10,6 @@ const MagicEye = () => (
         <div className="eye-iris">
           <div className="eye-pupil" />
         </div>
-        <div className="eye-lid top" />
-        <div className="eye-lid bottom" />
       </div>
     </div>
     <svg
