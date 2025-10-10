@@ -125,7 +125,7 @@ export default function Home() {
             size="lg"
             className="group h-16 w-64 rounded-full bg-primary/90 text-xl font-bold text-primary-foreground shadow-[0_0_20px_theme(colors.primary)] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-primary hover:shadow-[0_0_35px_theme(colors.primary)]"
           >
-            <Link href="https://www.dropbox.com/scl/fi/gxxbpf2cy04eas6iumx03/Mystiq-Mind.apk?rlkey=eyvux5pori2tyz64l692ok6cl&st=0w1lwtlu&dl=1">
+            <Link href="#">
               Download Now
             </Link>
           </Button>
